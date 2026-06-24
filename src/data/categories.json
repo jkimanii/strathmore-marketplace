@@ -1,0 +1,9 @@
+[
+  { "id": "all", "label": "All" },
+  { "id": "textbooks", "label": "Textbooks" },
+  { "id": "electronics", "label": "Electronics" },
+  { "id": "fashion", "label": "Fashion" },
+  { "id": "funiture", "label": "Furniture" },
+  { "id": "services", "label": "Services" },
+  { "id": "food", "label": "Food" }
+]

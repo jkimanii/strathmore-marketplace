@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import listings from './data/listings.json';
+import categories from './data/categories.json';
 
 // Placeholder pages
 function Browse() {
