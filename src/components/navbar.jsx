@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import './Navbar.css';
+import './navbar.css';
 
 function Navbar() {
   return (
