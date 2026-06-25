@@ -40,9 +40,7 @@
 .card-title {
   font-size: 0.95rem;
   font-weight: 600;
-  margin:
-    0 0 0,
-    4rem;
+  margin: 0 0 0.4rem;
   color: #111827;
   display: -webkit-box;
   line-clamp: 2;
