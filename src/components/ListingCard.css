@@ -1,0 +1,92 @@
+.listing-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    box-shadow 0.2s,
+    transform 0,
+    2s;
+  background: #fff;
+}
+.listing-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card-image-wrapper {
+  position: relative;
+}
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.card-category {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-weight: 500;
+  color: #374151;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin:
+    0 0 0,
+    4rem;
+  color: #111827;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4f46e5;
+  margin: 0 0 0.75rem;
+}
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.condition-badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+.card-campus {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+.condition-like-new {
+  background: #dcfce7;
+  color: #166534;
+}
+.condition-good {
+  background: #fef9c3;
+  color: #854d0e;
+}
+.condition-fair {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.condition-n\/a {
+  background: #f3f4f6;
+  color: #6b7280;
+}
