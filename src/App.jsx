@@ -1,14 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Browse from './pages/Browse';
 
 // Placeholder pages
-function Browse() {
-  return (
-    <main>
-      <h1>Browse Listing</h1>
-    </main>
-  );
-}
-
 function ListingDetail() {
   return (
     <main>
@@ -29,9 +23,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Browse />} />
-        <Route path="/listing/:id" element={<ListingDetail />} />
-        <Route path="/post" element={<PostListing />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Browse />} />
+          <Route path="/listing/:id" element={<ListingDetail />} />
+          <Route path="/post" element={<PostListing />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

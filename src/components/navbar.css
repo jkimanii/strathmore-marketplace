@@ -12,11 +12,25 @@
 }
 
 .navbar-logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
   white-space: nowrap;
+}
+
+.navbar-logo img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.navbar-logo span.logo-strath {
+  color: #a78bfa; /* purple accent for "Strath" */
 }
 
 .navbar-search {
