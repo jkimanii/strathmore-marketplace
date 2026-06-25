@@ -53,7 +53,7 @@ function Browse() {
       ) : (
         <div className="empty-state">
           <p>No listings in this category yet.</p>
-          <a href="/post">Be the first to post one →</a>
+          <Link to="/post">Be the first to post one →</Link>
         </div>
       )}
     </section>
