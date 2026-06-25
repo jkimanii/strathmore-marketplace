@@ -1,12 +1,16 @@
 // src/components/Navbar.jsx
 import { Link, NavLink } from 'react-router-dom';
-import './Navbar.css';
+import logo from '../assets/logo.png';
+import './navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        🛍️ StrathMarket
+        <img src={logo} alt="Logo" />
+        <span>
+          <span className="logo-strath">Strath</span>Shop
+        </span>
       </Link>
 
       <div className="navbar-search">
@@ -22,13 +26,17 @@ function Navbar() {
       <div className="navbar-links">
         <NavLink
           to="/"
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          className={({ isActive }) =>
+            isActive ? 'nav-link active' : 'nav-link'
+          }
         >
           Browse
         </NavLink>
         <NavLink
           to="/post"
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          className={({ isActive }) =>
+            isActive ? 'nav-link active' : 'nav-link'
+          }
         >
           + Post Item
         </NavLink>
