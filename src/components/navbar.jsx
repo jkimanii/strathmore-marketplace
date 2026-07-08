@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        <img src="/logo.png" alt="Logo" />
+        <img src="/logo.png" aria-hidden="true" />
         <span>
           <span className="logo-strath">Strath</span>Shop
         </span>
