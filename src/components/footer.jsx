@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <p className="footer-brand">
-          <img src="/logo.png" alt="Logo" />
+          <img src="/logo.png" alt="" aria-hidden="true" />
           <span>
             <span className="logo-strath">Strath</span>Shop
           </span>
