@@ -1,11 +1,10 @@
 import { useParams, Link } from 'react-router-dom';
-import allListings from '../data/listings.json';
 import './ListingDetail.css';
 
-function ListingDetail() {
+function ListingDetail({ listings }) {
   const { id } = useParams();
 
-  const listing = allListings.find((item) => item.id === id);
+  const listing = listings.find((item) => item.id === id);
 
   if (!listing) {
     return (
