@@ -1,16 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Browse from './pages/Browse';
+import ListingDetail from './pages/ListingDetail';
 
 // Placeholder pages
-function ListingDetail() {
-  return (
-    <main>
-      <h1>Listing Detail</h1>
-    </main>
-  );
-}
-
 function PostListing() {
   return (
     <main>
