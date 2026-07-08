@@ -1,17 +1,16 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ListingCard from '../components/ListingCard';
-import allListings from '../data/listings.json';
 import categories from '../data/categories.json';
 import './Browse.css';
 
-function Browse() {
+function Browse({ listings }) {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const filteredListings =
     activeCategory === 'all'
-      ? allListings
-      : allListings.filter(
+      ? listings
+      : listings.filter(
           (listing) =>
             listing.category.toLowerCase() === activeCategory.toLowerCase()
         );

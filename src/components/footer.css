@@ -17,10 +17,20 @@
 }
 
 .footer-brand {
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
   margin: 0;
+}
+
+.footer-brand img {
+  width: 29px;
+  height: 29px;
+  object-fit: contain;
 }
 
 .footer-tagline {
