@@ -56,9 +56,12 @@ function PostListing({ }) {
               name="price"
               type="number"
               value={form.price}
+              step ="100"
+              placeholder="e.g. 1500"
               onChange={handleChange}
               placeholder="e.g. 1500"
-              min="1"
+              min="0"
+              max="100000"
               className={errors.price ? 'input-error' : ''}
             />
             {errors.price && <span className="error-msg">{errors.price}</span>}

@@ -18,6 +18,7 @@ function Navbar() {
           placeholder="Search listings..."
           className="search-input"
           disabled
+          value="Search functionality coming soon!"
         />
       </div>
 

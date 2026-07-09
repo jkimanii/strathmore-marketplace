@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import './ListingDetail.css';
 
-function ListingDetail({ listings }) {
+function ListingDetail({ listings = []}) {
   const { id } = useParams();
 
   const listing = listings.find((item) => item.id === id);
