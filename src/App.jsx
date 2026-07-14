@@ -3,8 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Browse from './pages/Browse';
 import ListingDetail from './pages/ListingDetail';
+import PostListing from './pages/PostListing';
 import seedListings from './data/listings.json';
 
+/*
 // Placeholder pages
 function PostListing() {
   return (
@@ -13,6 +15,7 @@ function PostListing() {
     </main>
   );
 }
+*/
 
 function App() {
   const [listings, setListings] = useState(seedListings);
@@ -29,7 +32,7 @@ function App() {
             path="/listing/:id"
             element={<ListingDetail listings={listings} />}
           />
-          <Route path="/post" element={<PostListing />} />
+          <Route path="/post" element={<PostListing onAddListing={addListing}/>} />
         </Route>
       </Routes>
     </BrowserRouter>

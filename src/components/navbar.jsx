@@ -18,6 +18,7 @@ function Navbar() {
           placeholder="Search listings..."
           className="search-input"
           disabled
+          value="Search functionality coming soon!"
         />
       </div>
 
@@ -36,7 +37,7 @@ function Navbar() {
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          + Post Item
+          Post Item
         </NavLink>
         <button className="nav-btn-login">Login</button>
       </div>
