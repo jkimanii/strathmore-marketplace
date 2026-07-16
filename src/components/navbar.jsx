@@ -49,7 +49,14 @@ function Navbar({ onSearch }) {
         >
           Post Item
         </NavLink>
-        <button className="nav-btn-login">Login</button>
+        <NavLink
+          to="/login"
+          className={({ isActive }) =>
+            isActive ? 'nav-btn-login active' : 'nav-btn-login'
+          }
+        >
+          Login
+        </NavLink>
       </div>
     </nav>
   );
