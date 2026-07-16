@@ -1,11 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
 import './navbar.css';
+import logo from '../../assets/logo.png';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        <img src="/logo.png" aria-hidden="true" />
+        <img src={logo} aria-hidden="true" />
         <span>
           <span className="logo-strath">Strath</span>Shop
         </span>
