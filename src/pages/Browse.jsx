@@ -4,7 +4,7 @@ import ListingCard from '../components/ListingCard';
 import categories from '../data/categories.json';
 import './Browse.css';
 
-function Browse({ listings }) {
+function Browse({ listings = [] }) {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const filteredListings =

@@ -58,13 +58,22 @@
   text-decoration: none;
   color: #374151;
   font-size: 0.9rem;
+  transition: transform 0.2s;
 }
 
-.nav-link.active,
 .nav-link:hover {
   color: #4f46e5;
   font-weight: 600;
+  transform: translateY(-2px);
 }
+
+.nav-link.active {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+
+
 
 .nav-btn-login {
   background: #4f46e5;
