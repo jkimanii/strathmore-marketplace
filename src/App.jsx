@@ -8,6 +8,7 @@ import seedListings from './data/listings.json';
 
 function App() {
   const [listings, setListings] = useState(seedListings);
+  const [searchQuery, setSearchQuery] = useState('');
 
   function addListing(newListing) {
     setListings((prev) => [newListing, ...prev]);
@@ -15,8 +16,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Browse listings={listings} />} />
+        <Route element={<Layout onSearch={setSearchQuery} />}>
+          <Route
+            path="/"
+            element={<Browse listings={listings} searchQuery={searchQuery} />}
+          />
           <Route
             path="/listing/:id"
             element={<ListingDetail listings={listings} />}

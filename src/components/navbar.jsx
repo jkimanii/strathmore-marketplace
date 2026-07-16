@@ -1,8 +1,18 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import './navbar.css';
 import logo from '../../assets/logo.png';
+import { useState } from 'react';
 
-function Navbar() {
+function Navbar({ onSearch }) {
+  const [query, setQuery] = useState('');
+  const navigate = useNavigate();
+
+  function handleSearch(e) {
+    e.preventDefault();
+    onSearch(query);
+    navigate('/'); // Always go to Browse when searching
+  }
+
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
@@ -12,16 +22,15 @@ function Navbar() {
         </span>
       </Link>
 
-      <div className="navbar-search">
-        {/* This input becomes functional in Milestone 7 */}
+      <form className="navbar-search" onSubmit={handleSearch}>
         <input
           type="search"
           placeholder="Search listings..."
           className="search-input"
-          disabled
-          value="Search functionality coming soon!"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
         />
-      </div>
+      </form>
 
       <div className="navbar-links">
         <NavLink
