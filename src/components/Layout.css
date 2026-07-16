@@ -4,6 +4,7 @@
   min-height: 100vh;
   font-family: 'Century Gothic', 'Arial', sans-serif;
 }
+
 .main-content {
   flex: 1;
   padding: 2rem;

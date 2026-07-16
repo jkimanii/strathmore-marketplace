@@ -15,8 +15,7 @@ function Browse({ listings = [], searchQuery = '' }) {
       listing.category.toLowerCase() === activeCategory.toLowerCase();
 
     const matchesQuery =
-      !normalizedQuery ||
-      listing.title.toLowerCase().includes(normalizedQuery);
+      !normalizedQuery || listing.title.toLowerCase().includes(normalizedQuery);
 
     return matchesCategory && matchesQuery;
   });
@@ -57,8 +56,10 @@ function Browse({ listings = [], searchQuery = '' }) {
         </div>
       ) : (
         <div className="empty-state">
-          <p>No listings in this category yet.</p>
-          <Link to="/post">Be the first to post one →</Link>
+          <span style={{ fontSize: '2.5rem' }}>🔍</span>
+          <p>
+            No listings match <strong>"{searchQuery}"</strong>
+          </p>
         </div>
       )}
     </section>
