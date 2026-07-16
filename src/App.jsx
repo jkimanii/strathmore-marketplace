@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Browse from './pages/Browse';
 import ListingDetail from './pages/ListingDetail';
 import PostListing from './pages/PostListing';
+import Login from './pages/Login';
 import seedListings from './data/listings.json';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             path="/post"
             element={<PostListing onAddListing={addListing} />}
           />
+          <Route path="/login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>

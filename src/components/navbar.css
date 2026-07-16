@@ -75,7 +75,7 @@
 .nav-btn-login {
   background: #4f46e5;
   color: white;
-  border: none;
+  text-decoration: none;
   padding: 0.5rem 1.25rem;
   border-radius: 9999px;
   cursor: pointer;
