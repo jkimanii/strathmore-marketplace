@@ -16,3 +16,15 @@
   --space-md: 1rem;
   --space-lg: 2rem;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
