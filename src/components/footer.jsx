@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import './footer.css';
+import logo from '../../assets/logo.png';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
         <p className="footer-brand">
-          <img src="/logo.png" alt="" aria-hidden="true" />
+          <img src={logo} alt="" aria-hidden="true" />
           <span>
             <span className="logo-strath">Strath</span>Shop
           </span>
