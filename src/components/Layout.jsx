@@ -3,10 +3,10 @@ import Navbar from './navbar';
 import Footer from './footer';
 import './Layout.css';
 
-function Layout() {
+function Layout({ onSearch }) {
   return (
     <div className="app-shell">
-      <Navbar />
+      <Navbar onSearch={onSearch} />
       <main className="main-content">
         <Outlet />
       </main>

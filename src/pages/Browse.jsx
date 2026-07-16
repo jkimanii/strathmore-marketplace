@@ -4,16 +4,22 @@ import ListingCard from '../components/ListingCard';
 import categories from '../data/categories.json';
 import './Browse.css';
 
-function Browse({ listings = [] }) {
+function Browse({ listings = [], searchQuery = '' }) {
   const [activeCategory, setActiveCategory] = useState('all');
 
-  const filteredListings =
-    activeCategory === 'all'
-      ? listings
-      : listings.filter(
-          (listing) =>
-            listing.category.toLowerCase() === activeCategory.toLowerCase()
-        );
+  const normalizedQuery = searchQuery.trim().toLowerCase();
+
+  const filteredListings = listings.filter((listing) => {
+    const matchesCategory =
+      activeCategory === 'all' ||
+      listing.category.toLowerCase() === activeCategory.toLowerCase();
+
+    const matchesQuery =
+      !normalizedQuery ||
+      listing.title.toLowerCase().includes(normalizedQuery);
+
+    return matchesCategory && matchesQuery;
+  });
 
   return (
     <section>
