@@ -69,6 +69,7 @@ function Login() {
               name="password"
               type="password"
               value={form.password}
+              placeholder="Password"
               onChange={handleChange}
               className={errors.password ? 'input-error' : ''}
             />
@@ -81,7 +82,7 @@ function Login() {
           </button>
         </form>
         <p className="auth-switch">
-          Don't have an account? <Link to="/signup">Sign up</Link>
+          Don't have an account? <Link to="">Sign up</Link>
         </p>
       </div>
     </div>
