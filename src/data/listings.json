@@ -117,5 +117,29 @@
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBdaZIMjnvzER420B5nx-OuqrcgRc-fHYpyXDmrUVFRg&s=10",
     "description": "3rd year ICS student. Comfortable with Calculus, Probability & Statistics, Linear Algebra. Price per hour.",
     "datePosted": "2024-01-22"
+  },
+  {
+    "id": "11",
+    "title": "Scientific Calculator — Casio fx-991ES Plus",
+    "price": 4000,
+    "category": "Electronics",
+    "condition": "Good",
+    "sellerName": "Michael Ouma",
+    "sellerCampus": "Strathmore University",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Vl_h-PIv8dWQMz_9ndECsMLy6GgmN9WouyAn4kXZHQ&s=10",
+    "description": "Used throughout first year for ICS and Stats units. All functions working, buttons a bit worn but fully functional.",
+    "datePosted": "2024-01-24"
+  },
+  {
+    "id": "12",
+    "title": "Graphic Design Services — Posters, Flyers, Logos",
+    "price": 1000,
+    "category": "Services",
+    "condition": "N/A",
+    "sellerName": "Sarah Achieng",
+    "sellerCampus": "KCA University",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjE8GTtwdy0SUsKZsqC7SsfnPm2wkJCw9cdxXEXz1yKA&s=10",
+    "description": "2nd year Design student offering quick turnaround graphic design for events, clubs, and small businesses. Price per project, DM for quote.",
+    "datePosted": "2024-01-25"
   }
 ]
