@@ -18,8 +18,8 @@ function Footer() {
         <nav className="footer-links">
           <Link to="/">Browse</Link>
           <Link to="/post">Sell</Link>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
         <p className="footer-disclaimer">
           This platform is a student project and is not officially affiliated

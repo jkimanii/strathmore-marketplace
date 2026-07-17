@@ -5,6 +5,8 @@ import Browse from './pages/Browse';
 import ListingDetail from './pages/ListingDetail';
 import PostListing from './pages/PostListing';
 import Login from './pages/Login';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import seedListings from './data/listings.json';
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
             element={<PostListing onAddListing={addListing} />}
           />
           <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
